@@ -2,7 +2,7 @@
 // ASUC 症例入力アプリ（Web版）のオフライン用の仕組み（service worker）。
 // アプリのファイルだけをこの端末に保存し、ネットがなくても開けるようにする。入力内容は扱わない
 // （入力内容はアプリがこの端末のブラウザ内に保存し、外部へは送らない）。
-const CACHE = "asuc-crf-3f59e13d369a";
+const CACHE = "asuc-crf-960a0571016f";
 const FILES = ["./", "./index.html", "./manifest.webmanifest", "./icon-180.png", "./icon-192.png", "./icon-512.png"];
 self.addEventListener("install", e => {
   // 公開サーバーの一時保存（キャッシュ）に古い版が残っていても、必ず新しい版を取りに行く
